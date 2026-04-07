@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #232444;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px 20px;
+    height: 40px;
+}
+.logo { 
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    }
+.nav-links { 
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    }
+.nav-links li a:hover{ 
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    }
+.nav-links li a {
+    color: #faf7f7;
+      }
+.search-box input{
+    padding:6px 10px ;
+    border-radius:5px ;
+    border: none;
+}
+.hero{
+    margin-top: 60px;
+    position: relative;
+    height: 300px;
+    background: url("image/cinema.jpg") center/cover no-repeat;
+    
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     }
+  .btn {
+    background-color: red;  
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+     }
+     .categories button {
+     background: #444E7E;
+     color: white;
+     border: none;
+     padding: 8px 18px;
+     border-radius: 20px;
+     cursor: pointer;
+     transition:0.3s;
+      }
+    .title  {
+        color: white;
+        margin-left: 20px;
+         }
+    .movies {
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+         }
+    .card {
+        background:#3D3F58 ;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 15px;
+        text-align: center;
+        width: 180px;
+        transition: 0.3s;
+        }
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+         }
+    .card h3 {
+        color: white;
+        margin: 10px 0 5px;
+         } 
+    .card p {
+        color: white;
+         } 
+    .details-btn {
+    margin-top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    } 
+
+    
