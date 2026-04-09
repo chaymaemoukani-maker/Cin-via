@@ -88,6 +88,7 @@ body{
         padding: 20px;
          }
     .card {
+    position: relative;
     background:#3D3F58 ;
     padding: 15px;
     border-radius: 15px;
@@ -123,6 +124,114 @@ body{
     color: white;
     margin-left: 20px;
 }
+
+.popup {
+  display: none;
+  position: absolute;
+  background: #2b2e4a;
+  color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 100;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+
+.popup-content {
+  display: none;  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2b2e4a;
+  color: white;
+  width: 800px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;   
+  gap: 30px;
+  z-index: 1000;
+   transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.popup-content.show {
+  display: flex;
+  opacity: 1;
+}
+.popup-content img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  background: red;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-info h2 {
+  color: red;
+  font-size: 32px;
+}
+
+.popup-info p {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+.popup-category {
+  color: gold;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.fav-btn {
+  margin-top: 30px;
+  background: red;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card-category {
+  color: gold;
+  font-size: 14px;
+  margin: 5px 0 10px;
+  text-transform: uppercase;
+}
+
 .footer{
     background-color: black;
     color: white;
@@ -131,5 +240,6 @@ body{
     margin-top: 30px;
     font-size: 14px;
 }
+
 
     
