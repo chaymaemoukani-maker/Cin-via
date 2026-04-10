@@ -6,38 +6,41 @@
     <title>Cinévia</title>
     <link rel="stylesheet"href="STYLE.CSS">
 </head>
-<body>
-  
-    <nav class="navbar">
-        <div class="logo">🎬Cinévia</div>
-        <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Favoris</a></li>
-            <li><a href="#">Films</a></li>
-        </ul>
-            <div class="search-box">
-                <input type="text"
-                placeholder="Recherche..."/>
-                
-            </div>
+
+  <header class="navbar">
+ <div class="logo">🎬Cinévia</div>
+
+</div>
+   
+       <nav class="menu">
+        <a href="#Accueil">Accueil</a>
+        <a href="#movies">Films</a>
+        <a href="#favorites">Favoris</a>
     </nav>
-    <section class="hero">
+
+            <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Recherche..."/>
+    </div>
+      </header>
+  
+    <section id="Accueil" class="hero">
         <div class="hero-content">
             <h1>Découvrez les meilleurs films 🎥</h1>
             <p>Explorez, recherchez et ajoutez vos films préférés</p>
              <button class="btn">Explorer maintenant</button>
         </div>
     </section>
-    <div class="categories">
-        <button class="active">Tous</button>
-        <button>Action</button>
-        <button>Comédie</button>
-        <button>Drame</button>
-    </div>
+  <div class="categories">
+  <button class="active" data-cat="tous">Tous</button>
+  <button data-cat="action">Action</button>
+  <button data-cat="comédie">Comédie</button>
+  <button data-cat="drame">Drame</button>
+</div>
     <h2 class="title">Films populaires</h2>
-    <div class="movies"></div>
+    <div id ="movies" class="movies"></div>
 
 <h4>Mes Favoris ❤️</h4>
+<div id ="favorites" class="favorites"></div>
 
 <footer class="footer">
   <p>© 2026 Cinevia - Tous droits réservés</p>
